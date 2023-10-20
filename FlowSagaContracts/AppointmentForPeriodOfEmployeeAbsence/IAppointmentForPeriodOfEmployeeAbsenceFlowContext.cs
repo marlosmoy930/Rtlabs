@@ -1,0 +1,5 @@
+﻿namespace FlowSagaContracts.AppointmentForPeriodOfEmployeeAbsence;
+
+public interface IAppointmentForPeriodOfEmployeeAbsenceFlowContext
+{
+}

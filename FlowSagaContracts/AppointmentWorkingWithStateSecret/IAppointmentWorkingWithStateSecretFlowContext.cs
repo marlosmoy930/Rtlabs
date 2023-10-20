@@ -1,0 +1,5 @@
+﻿namespace FlowSagaContracts.AppointmentWorkingWithStateSecret;
+
+public interface IAppointmentWorkingWithStateSecretFlowContext
+{
+}
