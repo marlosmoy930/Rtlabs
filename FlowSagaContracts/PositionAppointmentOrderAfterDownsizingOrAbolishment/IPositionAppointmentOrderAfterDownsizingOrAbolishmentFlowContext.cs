@@ -1,0 +1,5 @@
+﻿namespace FlowSagaContracts.PositionAppointmentOrderAfterDownsizingOrAbolishment;
+
+public interface IPositionAppointmentOrderAfterDownsizingOrAbolishmentFlowContext
+{
+}
