@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Compile Remove="EsdFlowSagas\**" />
+      <EmbeddedResource Remove="EsdFlowSagas\**" />
+      <None Remove="EsdFlowSagas\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\RTLabs.EisUks.FlowEngine.FlowSagaEngine\RTLabs.EisUks.FlowEngine.FlowSagaEngine.csproj" />
+      <ProjectReference Include="..\RTLabs.EisUks.FlowEngine.ServiceDiscovery\RTLabs.EisUks.FlowEngine.ServiceDiscovery.csproj" />
+      <ProjectReference Include="..\FlowSagaContracts\FlowSagaContracts.csproj" />
+      <ProjectReference Include="..\Services\Services.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="MassTransit.EntityFrameworkCore" Version="8.0.5" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.7" />
+      <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="6.0.0" />
+    </ItemGroup>
+
+</Project>
